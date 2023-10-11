@@ -55,8 +55,8 @@ module.exports = function (context) {
     var xcodeProjectPath = helper.getXcodeProjectPath(context);
     helper.ensureRunpathSearchPath(context, xcodeProjectPath);
   }
-  if (platforms.indexOf('android') !== -1 && utilities.directoryExists(ANDROID_DIR)) {
+  /*if (platforms.indexOf('android') !== -1 && utilities.directoryExists(ANDROID_DIR)) {
     console.log('Preparing Firebase on Android');
     utilities.copyKey(PLATFORM.ANDROID);
-  }
+  }*/
 };
